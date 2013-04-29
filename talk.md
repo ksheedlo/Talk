@@ -1,0 +1,76 @@
+# Array Comprehensions in ECMAScript Harmony
+
+James Pfaff, Ken Sheedlo, Jack Skinner
+
+Spring 2013
+
+# Background
+
+- ECMAScript is a popular language for client-side scripting on the web
+- Well-known dialects include JavaScript and ActionScript
+- Standards are defined in the ECMA-262 spec
+- Work on array comprehension syntax is in progress
+    - Scheduled for upcoming ECMAScript 6 (Harmony) release
+
+# What are Array Comprehensions?
+
+- A concise syntax for constructing collections
+- A combined map, filter and Cartesian product operation
+
+# Why do I want to use them?
+
+- Makes code more expressive
+- Changes an imperative style to a declarative one
+    - Easier to understand
+    - Fewer bugs
+
+# History
+
+- Inspired by set-builder notation
+- Implemented in many functional languages
+    - Typically as *list comprehensions*
+    - Examples: Haskell, Miranda
+- Python has them
+
+# Example problem
+
+- Find all odd squares less than 10,000. 
+- How can we go about this?
+    - Using the smallest JS program
+    - No bugs
+
+# Set-builder notation
+
+# Early implementations
+
+# Haskell
+
+- Inspired by Miranda syntax
+- Note the convenient shorthand for a list of integers between 1 and 100
+
+        [n*n | n <- [1..100], n*n `mod` 2 == 1]
+
+# Python
+
+- Standardized in PEP 202
+- Implemented in Python 2.0 (2000)
+
+        [n*n for n in range(1, 101) if (n*n) % 2 == 1]
+
+# ECMAScript Harmony
+
+# Initial abstract syntax
+
+# Current abstract syntax
+
+# Implementation progress
+
+# Mozilla
+
+# V8
+
+# Other implementations
+
+# Community impact
+
+# Predictions for the future
