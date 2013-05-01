@@ -122,16 +122,24 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 # Mozilla
 
-- Supports array comprehensions in its SpiderMonkey ECMAScript parsing and execution engine.
+- Has supported array comprehensions since Firefox 2
+- Originally used a different syntax
+- ES6 array comprehensions have been implemented
+    - Recent SpiderMonkey and Firefox support our syntax
 
 # V8
 
 - No current support for array comprehensions
-- Dev community stated that new features will not be coming until they are officially accepted in the final version of the ECMAScript specification. 
+- Waiting on final version of ES6 spec
+- Will not implement non-standard Mozilla features
 
 # Other implementations
 
-- Other EMCAScript engines like Carakan, Chakra, and JavaScriptCore don't have any support for array comprehensions.
+- Implementations that don't currently support it
+    - Carakan (Opera)
+    - Chakra (IE9)
+    - JavaScriptCore (Safari)
+- Not publicly known whether upcoming IE will support it
 
 # Community support
 
