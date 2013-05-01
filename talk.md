@@ -60,11 +60,11 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 # JavaScript, before array comps
 
-    function range (m, n) {
+    var range = function (m, n) {
       var rs = [], i = m;
       for (; i <= n; i++) { rs.push(i); }
       return rs;
-    }
+    };
     var res = [], xs = range(1, 100);
     for (var i = 0; i < xs.length; i++) {
       var n = xs[i];
@@ -76,12 +76,13 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 # JavaScript, with array comps
 
-    function range (m, n) {
+    var range = function (m, n) {
       var rs = [], i = m;
       for (; i <= n; i++) { rs.push(i); }
       return rs;
-    }
-    return [n*n for (n of range(1, 100)) if (n*n % 2 == 1)];
+    };
+    var xs = range(1, 100);
+    return [n*n for (n of xs) if (n*n % 2 == 1)];
 
 # Initial abstract syntax
 
