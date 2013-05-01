@@ -74,3 +74,6 @@ Spring 2013
 # Community impact
 
 # Predictions for the future
+
+- Not quite ready for production use due to not being supported in most main-stream web browsers. 
+- Not feasibly usable in server-side production code.
