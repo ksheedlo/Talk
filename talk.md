@@ -61,7 +61,36 @@ Spring 2013
 
 # Initial abstract syntax
 
+    ArrayComprehension:
+        [Expression ComprehensionForList]
+        [Expression ComprehensionForList if (Expression)]
+    ComprehensionForList: 
+        ComprehensionFor
+        ComprehensionForList ComprehensionFor 
+    ComprehensionFor:
+        for (LeftHandSideExpression of Expression)
+
 # Current abstract syntax
+
+    ArrayComprehension:
+        [Comprehension]
+    Comprehension:
+        ComprehensionQualification AssignmentExpression
+    ComprehensionQualification:
+        ComprehensionFor ComprehensionQualifierList
+    ComprehensionQualifierList:
+        ComprehensionQualifier
+        ComprehensionQualifierList ComprehensionQualifier
+    ComprehensionQualifier:
+        ComprehensionFor
+        ComprehensionIf
+    ComprehensionFor:
+        for (ForBinding of AssignmentExpression)
+    ComprehensionIf:
+        if (AssignmentExpression)
+    ForBinding:
+        BindingIdentifier
+        BindingPattern
 
 # Implementation progress
 
@@ -75,6 +104,8 @@ Spring 2013
 - Dev community stated that new features will not be coming until they are officially accepted in the final version of the ECMAScript specification. 
 
 # Other implementations
+
+- Other Carakan, Chakra, and JavaScriptCore did not appear to have any support for array comprehensions.
 
 # Community impact
 
