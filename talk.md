@@ -172,4 +172,11 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 - Array comprehensions increase expressiveness
     - Map, filter, Cartesian product in one expression
+- Useful, but not widely deployable due to limited support
 
+# Sources
+- https://code.google.com/p/v8/issues/detail?id=890
+- http://stackoverflow.com/questions/14511954/array-comprehensions-in-nodejs
+- https://developer.mozilla.org/en-US/docs/JavaScript/New_in_JavaScript/1.7
+- http://stackoverflow.com/questions/11479418/array-comprehension-in-javascript
+- http://stackoverflow.com/questions/4964456/make-javascript-do-list-comprehension
