@@ -61,15 +61,51 @@ Spring 2013
 
 # Initial abstract syntax
 
+    ArrayComprehension:
+        [Expression ComprehensionForList]
+        [Expression ComprehensionForList if (Expression)]
+    ComprehensionForList: 
+        ComprehensionFor
+        ComprehensionForList ComprehensionFor 
+    ComprehensionFor:
+        for (LeftHandSideExpression of Expression)
+
 # Current abstract syntax
+
+    ArrayComprehension:
+        [Comprehension]
+    Comprehension:
+        ComprehensionQualification AssignmentExpression
+    ComprehensionQualification:
+        ComprehensionFor ComprehensionQualifierList
+    ComprehensionQualifierList:
+        ComprehensionQualifier
+        ComprehensionQualifierList ComprehensionQualifier
+    ComprehensionQualifier:
+        ComprehensionFor
+        ComprehensionIf
+    ComprehensionFor:
+        for (ForBinding of AssignmentExpression)
+    ComprehensionIf:
+        if (AssignmentExpression)
+    ForBinding:
+        BindingIdentifier
+        BindingPattern
 
 # Implementation progress
 
 # Mozilla
 
+- Supports array comprehensions in its SpiderMonkey ECMAScript parsing and execution engine.
+
 # V8
 
+- No current support for array comprehensions
+- Dev community stated that new features will not be coming until they are officially accepted in the final version of the ECMAScript specification. 
+
 # Other implementations
+
+- Other EMCAScript engines like Carakan, Chakra, and JavaScriptCore don't have any support for array comprehensions.
 
 # Community support
 
@@ -91,3 +127,7 @@ Spring 2013
     - Not well supported yet
 
 # Predictions for the future
+
+- A developer with the desire to use array comprehension could feasibly use a higher-level ECMAScript framework to accomplish its functionality, as the higher-level framework could take care of instances where the specific language feature is not yet available in the browser that the code is being executed in.
+- Not quite ready for production use due to not being supported in most main-stream web browsers. 
+- Not feasibly usable in server-side production code.
