@@ -41,23 +41,44 @@ Spring 2013
 
 # Set-builder notation
 
-# Early implementations
+# In different languages
 
-# Haskell
+- Miranda (1985)
 
-- Inspired by Miranda syntax
-- Note the convenient shorthand for a list of integers between 1 and 100
+        [n*n | n <- [1..100]; n*n mod 2 = 1]
+
+- Haskell (1991)
 
         [n*n | n <- [1..100], n*n `mod` 2 == 1]
 
-# Python
-
-- Standardized in PEP 202
-- Implemented in Python 2.0 (2000)
+- Python (2000)
 
         [n*n for n in range(1, 101) if (n*n) % 2 == 1]
 
-# ECMAScript Harmony
+# JavaScript, before array comps
+
+    var xs = (function () {
+      var rs = [], i = 1;
+      for (; i <= 100; i++) { rs.push(i); }
+      return rs;
+    })();
+    var res = [];
+    for (var i = 0; i < xs.length; i++) {
+      var n = xs[i];
+      if (n*n % 2 == 1) {
+        res.push(n*n);
+      }
+    }
+    return res;
+
+# JavaScript, with array comps
+
+    var xs = (function () {
+      var rs = [], i = 1;
+      for (; i <= 100; i++) { rs.push(i); }
+      return rs;
+    })();
+    return [n*n for (n of xs) if (n*n % 2 == 1)];
 
 # Initial abstract syntax
 
