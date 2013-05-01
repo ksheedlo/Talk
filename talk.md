@@ -41,6 +41,9 @@ Spring 2013
 
 # Set-builder notation
 
+- Note how $m$ and $n$ are *drawn from sets*
+- Array comprehensions emulate this behavior
+
 # In different languages
 
 - Miranda (1985)
