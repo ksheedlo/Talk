@@ -1,10 +1,11 @@
 PANDOC=pandoc
+PANDOC_FLAGS=-V theme:PaloAlto
 
 .PHONY: all
 all: talk.pdf
 
 %.pdf: %.md
-	$(PANDOC) -f markdown -V theme:PaloAlto --write beamer --template talk.beamer -o $@ $^
+	$(PANDOC) -f markdown $(PANDOC_FLAGS) --write beamer --template talk.beamer -o $@ $^
 
 .PHONY: clean
 clean:
