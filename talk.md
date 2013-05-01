@@ -1,4 +1,4 @@
-# Array Comprehensions in ECMAScript Harmony
+# Array Comprehensions in JavaScript
 
 James Pfaff, Ken Sheedlo, Jack Skinner
 
@@ -6,11 +6,11 @@ Spring 2013
 
 # Background
 
-- ECMAScript is a popular language for client-side scripting on the web
-- Well-known dialects include JavaScript and ActionScript
-- Standards are defined in the ECMA-262 spec
+- Javascript is formally defined in the ECMA-262 spec
+    - Also known as ECMAScript
 - Work on array comprehension syntax is in progress
     - Scheduled for upcoming ECMAScript 6 (Harmony) release
+- Other ECMAScript dialects include ActionScript and JScript
 
 # What are Array Comprehensions?
 
