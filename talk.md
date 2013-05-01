@@ -164,9 +164,10 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 # Predictions for the future
 
-- A developer with the desire to use array comprehension could feasibly use a higher-level ECMAScript framework to accomplish its functionality, as the higher-level framework could take care of instances where the specific language feature is not yet available in the browser that the code is being executed in.
 - Not quite ready for production use due to not being supported in most main-stream web browsers. 
-- Not feasibly usable in server-side production code.
+- Not feasibly usable in server-side production code (e.g., NodeJS).
+- Higher-level JS frameworks achieve equivalent functionality
+    - underscore.js provides map, filter, etc.
 
 # Conclusion
 
