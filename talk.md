@@ -168,6 +168,7 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 - Not feasibly usable in server-side production code (e.g., NodeJS).
 - Higher-level JS frameworks achieve equivalent functionality
     - underscore.js provides map, filter, etc.
+- Should be production ready in 2-3 years
 
 # Conclusion
 
