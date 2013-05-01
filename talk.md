@@ -41,6 +41,8 @@ Spring 2013
 
 # Set-builder notation
 
+$\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
+
 # Early implementations
 
 # Haskell
