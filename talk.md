@@ -120,7 +120,7 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 
 # Implementation progress
 
-- Little progress towards implementation in a variety of JavasSript engines
+- Little progress towards implementation in a variety of JavaScript engines
 - Not presently widely usable in production
 - Identical functionality can be accomplished using a utility framework such as Underscore.js
 
