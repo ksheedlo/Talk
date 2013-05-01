@@ -16,10 +16,7 @@ Spring 2013
 
 - A concise syntax for constructing collections
 - A combined map, filter and Cartesian product operation
-
-# Why do I want to use them?
-
-- Makes code more expressive
+- Using them makes code more expressive
 - Changes an imperative style to a declarative one
     - Easier to understand
     - Fewer bugs
@@ -31,6 +28,7 @@ Spring 2013
     - Typically as *list comprehensions*
     - Examples: Haskell, Miranda
 - Python has them
+    - Major influence on ES6 syntax
 
 # Example problem
 
