@@ -71,6 +71,23 @@ Spring 2013
 
 # Other implementations
 
-# Community impact
+# Community support
+
+- StackOverflow
+    - Multiple threads asking for array comprehensions
+    - Or a way to emulate them
+- We found a number of blog articles supporting the topic
+- V8 issue from 2010 asked for array comprehensions
+    - Did not get them
+    - It was a non-standard Mozilla feature then
+
+# Community concerns
+
+- Readability
+    - Array comps may be unfamiliar to JS programmers
+- Compatibility
+    - V8 won't implement until ES6 is finalized
+    - Mozilla has had array comps for a while, syntax has changed
+    - Not well supported yet
 
 # Predictions for the future
