@@ -42,8 +42,10 @@ Spring 2013
 # Set-builder notation
 
 $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
-Note how $m$ and $n$ are *drawn from sets*
+
+- Note how $m$ and $n$ are *drawn from sets*
 - Array comprehensions emulate this behavior
+
 # In different languages
 
 - Miranda (1985)
