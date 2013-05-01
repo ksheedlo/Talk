@@ -161,3 +161,18 @@ $\{n \in \mathbb{N} | m^2 = n, m \in \mathbb{N}, n \leq 10000\}$
 - A developer with the desire to use array comprehension could feasibly use a higher-level ECMAScript framework to accomplish its functionality, as the higher-level framework could take care of instances where the specific language feature is not yet available in the browser that the code is being executed in.
 - Not quite ready for production use due to not being supported in most main-stream web browsers. 
 - Not feasibly usable in server-side production code.
+
+
+
+
+
+
+
+
+
+# Sources
+- https://code.google.com/p/v8/issues/detail?id=890
+- http://stackoverflow.com/questions/14511954/array-comprehensions-in-nodejs
+- https://developer.mozilla.org/en-US/docs/JavaScript/New_in_JavaScript/1.7
+- http://stackoverflow.com/questions/11479418/array-comprehension-in-javascript
+- http://stackoverflow.com/questions/4964456/make-javascript-do-list-comprehension
