@@ -105,7 +105,7 @@ Spring 2013
 
 # Other implementations
 
-- Other Carakan, Chakra, and JavaScriptCore did not appear to have any support for array comprehensions.
+- Other EMCAScript engines like Carakan, Chakra, and JavaScriptCore don't have any support for array comprehensions.
 
 # Community impact
 
