@@ -5,7 +5,15 @@ a lot of value and keep code relatively clean
 
 # Background (Jack)
 
+- For some background, Javascript is formally defined in the ECMAScript,
+and they're working on it for the upcoming version known as Harmony.
+- Other ECMAScript languages are ActionScript and Jscript.
+
 # What are Array Comprehensions? (Jack)
+
+- It's a concise syntax for constructing collections and combines map,
+filter, and Cartesian product into one operation and it makes code
+more expressive and declarative.
 
 # History (Ken)
 
@@ -71,17 +79,27 @@ slightly different syntax.
 
 # Community support (Jack)
 
+- Many people on online forums requested for array comprehension in Javascript.
 - Segway faster into the V8 issue, and we can bleed over
 a little bit into the next slide as community concerns
 are not as important
-
 - Skip the bullet about blog articles
+- Back in 2010, V8 asked for array comprehensions but still didn't get them.
 
 # Community concerns (Jack)
+
+- Concerns about readibility and compatability.
+- Comps aren't familiar with JS programmers.
+- As said earlier, still not fully supported.
 
 # Predictions for the future (Jack)
 
 - Not quite ready for production use as it's not supported in all browsers
 Skip talking about the underscore.js 
+- However, it should be ready to be implemented in JS in 2-3 years.
 
 # Conclusion (Jack)
+
+- Array comprehensions makes code easier to understand.
+- Combines three functions into one expression.
+- Will be coming soon.
